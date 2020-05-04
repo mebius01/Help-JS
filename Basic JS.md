@@ -61,6 +61,53 @@ let a = 3;
 let b = 3;
 a > b ? console.log(a > b) : console.log(b > a);
 ```
+### if
+Оператор if(...) вычисляет условие в скобках и, если результат true, то выполняет блок кода.
+```javascript
+if (1 > 0) console.log('1 > 0');
+
+if (1 > 0) {
+    console.log('1 > 0')
+};
+```
+### if else
+```javascript
+if (a > b) {
+    console.log('a > b');
+} else if (a < b) {
+    console.log('a < b');
+}
+
+if (усдловие) {
+    дейсвие;
+} else {
+    if (условие) {
+        дейсвие;
+    } else {
+        if (условие) {
+            дейсвие;
+        }
+    }
+}
+```
+
+### Switch case
+```javascript
+let c = 10;
+switch (c) {
+    case 8:
+        console.log(`${c} = 8`);
+        break;
+    case 9:
+        console.log(`${c} = 9`);
+        break;
+    case 10:
+        console.log(`${c} = 10`);
+    default:
+        console.log(`${c} != 8 && != 9 && != 10`);
+        break;
+}
+```
 
 ## Логические операторы
 ИЛИ - || Запинается true. Если одно из условий true вернет true Если все true вернет первое true
