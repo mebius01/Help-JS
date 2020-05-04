@@ -1,13 +1,13 @@
+* Восемь типов данных, typeof
 
 ```javascript
-let value = 10;
-value = (40).toString();
-value = '20';
-value = Number('20');
-value = parseFloat('20.20px');
-value = parseInt('20.20px');
-value = String(10);
-value = Boolean('false');
-value = Array('12');
-value = Object('10');
-console.log(typeof value, value)```
+typeof undefined // "undefined" значение не присвоено
+typeof 0 // "number"
+typeof 1234567890123456789012345678901234567890n // "bigint" Очень большое число
+typeof true // "boolean"
+typeof "string" // "string"
+typeof Symbol() // "symbol" представляет собой уникальный идентификатор
+typeof {key: 'value'} // "object"
+typeof null // "object" это официально признанная ошибка в языке. Это отдельный тип
+typeof function(){} // "function"
+```
