@@ -108,41 +108,6 @@ console.log('-------');
 
 // МЕТОДЫ ОБЪЕКТОВ В JAVASCRIPT - https://www.8host.com/blog/metody-obektov-v-javascript/
 
-/**
- * froEach
- * Этой функции он передаёт три параметра callback(item, i, arr):
- * item – очередной элемент массива.
- * i – его номер.
- * arr – массив, который перебирается.
- */
-const arr = ['1', '2', '3', 11, 22, 30, 12];
-arr.forEach((item, i, arr) => {
-    console.log(item);
-});
-
-/**
- * filtr
- * Он создаёт новый массив, в который войдут только те элементы arr,
- * для которых вызов callback(item, i, arr) возвратит true.
- */
-const arr2 = arr.filter(item => item > 20 || typeof item == 'string');
-console.log(arr2);
-console.log('-------');
-
-
-/**
- * map
- * Он создаёт новый массив, который будет состоять из результатов вызова 
- * callback(item, i, arr) для каждого элемента arr.
- * 
- */
-const arr3 = arr.map((item, i) => {
-    return {
-        [i]: item
-    };
-});
-console.log(arr3);
-console.log('-------');
 
 /**
  * every/some
@@ -157,33 +122,9 @@ const isPositive = (number) => {
 console.log(arr.every(isPositive)); // false, не все положительные
 console.log(arr.some(isPositive)); // true, есть хоть одно положительное
 console.log('-------');
-
-/**
- * Reduce
- * Принимает два аргумента callback и стартовое значение 
- * Сам калбек хранит переменнуя = результат предидущей итерации 
- * index и сам массив
- */
-const arr4 = [4, 8, 23, 14, 67, 21, 161, 3, 4, 5, 6, 7];
-const arrReduce = arr4.reduce((acc, item) => (acc + item), 0);
-console.log(arrReduce)
-console.log('-------');
+;
 
 
-/**
- * Метод find() возвращает значение первого найденного в массиве элемента,
- */
-const arrFind = arr4.find(item => item === 6);
-console.log(arrFind)
-console.log('-------');
-
-
-/**
- * Sort
- */
-
-console.log(arr4.sort((a, b) => (b - a)));
-console.log('-------');
 
 /**
  * Spred
