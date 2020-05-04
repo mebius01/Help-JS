@@ -114,9 +114,9 @@ let result = arr.find(function(item, index, array) {
 });
 ```
 ### indexOf/lastIndexOf и includes
-arr.indexOf(item, from) ищет item, начиная с индекса from, и возвращает индекс, на котором был найден искомый элемент, в противном случае -1.  
-arr.lastIndexOf(item, from) – то же самое, но ищет справа налево.  
-arr.includes(item, from) – ищет item, начиная с индекса from, и возвращает true, если поиск успешен.
+* arr.indexOf(item, from) ищет item, начиная с индекса from, и возвращает индекс, на котором был найден искомый элемент, в противном случае -1.  
+* arr.lastIndexOf(item, from) – то же самое, но ищет справа налево.  
+* arr.includes(item, from) – ищет item, начиная с индекса from, и возвращает true, если поиск успешен.
 
 ### reverse меняет порядок элементов
 ```javascript
