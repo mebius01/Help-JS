@@ -287,24 +287,16 @@ arrowFun4(4); // true
 ### Замыкание
 
 ```javascript
-function Fun() {
-  let value = 0;
-  return function () {
-    value++;
-  };
-}
-
 function makeCounter() {
   let count = 0;
 
-  return function() {
+  return function () {
     return count++; // есть доступ к внешней переменной "count"
   };
 }
 
 let counter = makeCounter();
-counter() // 0
-counter() // 1
-counter() // 2
-
+counter(); // 0
+counter(); // 1
+counter(); // 2
 ```
