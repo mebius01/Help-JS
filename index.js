@@ -23,65 +23,15 @@ console.log([...link]);
 /**
  * Работа с классами
  */
-// вывести список классов
-console.log(menu.classList);
-console.log(menu.className);
 
-// добавить класс
-menu.classList.add('class__1', 'calss__2');
-console.log(menu.classList);
-
-// удалить класс
-menu.classList.remove('menu');
-console.log(menu.classList);
-
-//проверить наличие класс
-console.log(menu.classList.contains('menu')); // false or true
-
-// toggle
-//Если класса нет добавить
-menu.classList.toggle('toggle');
-console.log(menu.classList);
-// Если класс есть удалить
-menu.classList.toggle('toggle');
-console.log(menu.classList);
 
 /**
- * Работа с Атрибутами
- */
-let element = [...link][0];
-//Доступ к атрибутам html
-console.log(element.href);
-
-// Добавить атрибут
-element.setAttribute('id', '1');
-
-// Получить атрибут
-console.log(element.getAttribute('title'));
-
-// Получение кастомных атрибутов
-console.log(element.dataset);
-
-// Проверить наличие атрибута
-console.log(element.hasAttribute('id'));
-
-// Удаление атрибута
-element.removeAttribute('id');
-
+ 
 
 /**
  * Манипуляция DOM
  */
-let lorem3 = document.querySelector('.lorem3');
-// lorem3.innerHTML = '<b>TEXT</b>';
-// lorem3.textContent = 'text content';
 
-// Добавить HTML в DOM 
-// может принимать 4 параметра afterbegin afterend beforebegin
-lorem3.insertAdjacentHTML('afterbegin', '<b>TEXT afterbegin</b>');
-lorem3.insertAdjacentHTML('afterend', '<b>TEXT afterend</b>');
-lorem3.insertAdjacentHTML('beforebegin', '<b>TEXT beforebegin</b>');
-lorem3.insertAdjacentHTML('beforeend', '<b>TEXT beforeend</b>');
 
 // Создать DOM элемент
 let span = document.createElement('span'); // создать тег
@@ -105,21 +55,7 @@ num.forEach((item) => {
 // document.body.appendChild(fragment);
 
 
-/**
- * Событие
- */
 
-const btn = document.querySelector('.event__btn');
-// addEventListener три аргумента событие, функцию и объект настройками
-const clickHendler = (event) => {
-    event.preventDefault(); // отменяет дейсвие по умолчанию
-    console.log('CLICK link');
-};
-
-btn.addEventListener("click", clickHendler);
-
-// удалить событие
-btn.removeEventListener('click', clickHendler);
 
 /**
  * Всплытие и погружение событие
@@ -142,7 +78,7 @@ const clickDivHendler = (event) => {
 
 document.body.addEventListener('click', event => {
     console.log('click body');
-})
+});
 
 contLink.addEventListener('click', clickLinkHendler);
 contDiv.addEventListener('click', clickDivHendler);
