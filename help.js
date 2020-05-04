@@ -1,39 +1,5 @@
-/**
- * 
- * Комент
- * 
- */
-// Преобразования типов
-let value = 10;
-value = (40).toString();
-value = '20';
-value = Number('20');
-value = parseFloat('20.20px');
-value = parseInt('20.20px');
-value = String(10);
-value = Boolean('false');
-value = Array('12');
-value = Object('10');
-console.log(typeof value, value);
-
-// Шаблонные строки
-let name = 'Den';
-let age = 23;
-let templateString = `Test template string
-Name = ${name},
-Age = ${age}`;
-console.log(templateString);
-console.log('-------');
-
 // Операторы
-/**
- * ИЛИ - || Запинается true. Если одно из условий true вернет true Если все true вернет первое true
- * И - && Запинается на false. Если одно из условий false вернет false Если все true Вернет последнее true
- * Не !
- */
-value = 0 || 2 || 3;
-value = 3 && 2 && 1;
-console.log(value);
+
 console.log('-------');
 
 // Тернарный оператор.
