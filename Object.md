@@ -18,15 +18,6 @@ user["employed"]; // true
 // удаление свойства
 delete user["employed"];
 
-function makeUser(name, age) {
-    return {
-        name, // то же самое, что и name: name
-        age   // то же самое, что и age: age
-  };
-}
-
-"name" in user // проверка true
-
 // Перебор
 for (let key in user) {
     // ключи
@@ -35,5 +26,13 @@ for (let key in user) {
     user[key]; // "John"
 }
 
+function makeUser(name, age) {
+    return {
+        name, // то же самое, что и name: name
+        age   // то же самое, что и age: age
+  };
+}
 
+// проверка значения
+"name" in user;
 ```
