@@ -140,6 +140,11 @@ let result = arr.find(function(item, index, array) {
 ```javascript
 arr.reverse();
 ```
+### every/some
+Эти методы используются для проверки массива.  
+every возвращает true, если вызов callback вернёт true для каждого элемента arr.  
+some возвращает true, если вызов callback вернёт true для какого-нибудь элемента arr.  
+
 ### Spred
 Делит массив на элементы
 
