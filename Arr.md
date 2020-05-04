@@ -2,6 +2,7 @@
 ```javascript
 let arr = new Array();
 let arr = [1,2,3];
+arr.isArray([])); // true
 
 arr[0]; // 1
 arr[1]; // 2
@@ -122,7 +123,7 @@ let result = arr.find(function(item, index, array) {
 ```javascript
 arr.reverse();
 ```
-### Spred Оператор spred делит массив на элементы
+### Spred делит массив на элементы
 ```javascript
 const sp = ['1', '2', '3', '4', '5'];
 const sp2 = [5, 6, 7, 8];
