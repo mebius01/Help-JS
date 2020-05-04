@@ -1,4 +1,4 @@
-* Восемь типов данных, typeof
+### Восемь типов данных, typeof
 
 ```javascript
 typeof undefined // "undefined" значение не присвоено
