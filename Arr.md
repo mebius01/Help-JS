@@ -111,7 +111,7 @@ let result = arr.map(function(item, index, array) {
 ```javascript
 console.log(arr4.sort((a, b) => (b - a))); // сортировка числового массива
 ```
-### Reduce
+### reduce
 Используются для вычисления какого-нибудь единого значения на основе всего массива
 Принимает два аргумента callback и стартовое значение
 Сам callback хранит переменнуя в которой результат предидущей итерации index и сам массив
@@ -147,4 +147,16 @@ arr.reverse();
 const sp = ['1', '2', '3', '4', '5'];
 const sp2 = [5, 6, 7, 8];
 console.log(...sp2, ...sp); // 5 6 7 8 "1" "2" "3" "4" "5"
+
+const spObj = {
+    s: 1,
+    d: 2,
+    c: true
+}
+const spObj2 = {
+    z: 11,
+    dd: 22,
+    ac: false
+}
+console.log({...spObj, ...spObj2}) // {s: 1, d: 2, c: true, z: 11, dd: 22, ac: false}
 ```
