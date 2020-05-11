@@ -7,13 +7,13 @@ const xhr = new XMLHttpRequest();
 // Кофигурируем запрос
 xhr.open("GET", "https://jsonplaceholder.typicode.com/posts");
 
-// Обрабатывает ответ
+// Повешать событие на успешный ответ Обрабатывает ответ
 xhr.addEventListener("load", () => {
   const response = JSON.parse(xhr.responseText);
   console.log(response);
 });
 
-// Обрабатывает ошибки
+// Повешать событие на ошибку Обрабатывает ошибки
 xhr.addEventListener("error", () => {
   console.log("ERROR");
 });
