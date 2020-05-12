@@ -44,6 +44,7 @@ fetch("https://jsonplaceholder.typicode.com/posts")
     - объект FormData для отправки данных как form/multipart,
     - Blob/BufferSource для отправки бинарных данных,
     - URLSearchParams для отправки данных в кодировке x-www-form-urlencoded, используется редко.
+- headers - Заголовки
 
 ```javascript
 const user = {
