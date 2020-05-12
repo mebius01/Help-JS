@@ -206,3 +206,9 @@ fetch('https://reqres.in/api/users/', parm)
 //     "Content-type": "application/json; charset=UTF-8"
 // }
 // http.post(url, cbResponse, headers, object)
+
+async function f() {
+    return 1;
+  }
+  
+  f().then(alert); // 1
