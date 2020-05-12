@@ -40,10 +40,10 @@ fetch("https://jsonplaceholder.typicode.com/posts")
 
 - method – HTTP метод, например POST,
 - body – тело запроса, одно из списка:
-- строка (например, в формате JSON),
-- объект FormData для отправки данных как form/multipart,
-- Blob/BufferSource для отправки бинарных данных,
-- URLSearchParams для отправки данных в кодировке x-www-form-urlencoded, используется редко.
+    - строка (например, в формате JSON),
+    - объект FormData для отправки данных как form/multipart,
+    - Blob/BufferSource для отправки бинарных данных,
+    - URLSearchParams для отправки данных в кодировке x-www-form-urlencoded, используется редко.
 
 ```javascript
 const user = {
@@ -57,9 +57,10 @@ const parm = {
 }
 
 fetch('https://reqres.in/api/users/', parm)
-.then(result => {
-    console.log(result.status);
-    return result.json();
-}).then(data => console.log(data))
-.catch(error => console.log(error))
+    .then(result => {
+        console.log(result.status);
+        return result.json();
+    })
+    .then(data => console.log(data))
+    .catch(error => console.log(error))
 ```
