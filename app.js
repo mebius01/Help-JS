@@ -42,23 +42,23 @@
 //     .catch(error => console.error(error))
 
 
-const user = {
-    name: 'John',
-    surname: 'Smith'
-};
+// const user = {
+//     name: 'John',
+//     surname: 'Smith'
+// };
 
-const parm = {
-    method: 'POST',
-    headers: {'Content-Type': 'application/json;charset=utf-8'},
-    body: JSON.stringify(user)
-}
+// const parm = {
+//     method: 'POST',
+//     headers: {'Content-Type': 'application/json;charset=utf-8'},
+//     body: JSON.stringify(user)
+// }
 
-fetch('https://reqres.in/api/users/', parm)
-.then(result => {
-    console.log(result.status);
-    return result.json();
-}).then(data => console.log(data))
-.catch(error => console.log(error))
+// fetch('https://reqres.in/api/users/', parm)
+// .then(result => {
+//     console.log(result.status);
+//     return result.json();
+// }).then(data => console.log(data))
+// .catch(error => console.log(error))
 
 // El();
 
@@ -207,8 +207,42 @@ fetch('https://reqres.in/api/users/', parm)
 // }
 // http.post(url, cbResponse, headers, object)
 
-async function f() {
-    return 1;
-  }
-  
-  f().then(alert); // 1
+class Animal {
+    constructor(opt) {
+        this.name = opt.name
+        this.age = opt.age
+        this.valid = opt.valid
+        this.voice = opt.voice
+    }
+    get getVoice() {
+        return this.voice
+    }
+    set setVoice(voice) {
+        return this.voice = voice
+    }
+    animalSay() {
+        console.log(`Animal says ${this.getVoice}`);
+    }
+}
+
+class Cat extends Animal {
+    constructor(opt) {
+        super(opt)
+        this.color = opt.color
+    }
+}
+const cat = new Cat({
+    name: "tom",
+    age: 12,
+    valid: true,
+    voice: "MuyMu",
+    color: "black"
+});
+
+class Cow extends Animal {}
+const cow = new Cow({
+    name: "Мурка",
+    age: 7,
+    valid: true,
+    voice: "Мууу МумУуууу",
+})
