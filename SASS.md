@@ -191,3 +191,35 @@ main.css
   color: #853333;
 }
 ```
+
+## Наследование
+
+main.scss
+
+```scss
+.message {
+  border: 3px solid rgb(171, 71, 71);
+  padding: 30px;
+  color: #333;
+}
+
+.success {
+  @extend .message;
+  border-color: green;
+}
+```
+
+main.css
+
+```css
+.message,
+.success {
+  border: 3px solid #ab4747;
+  padding: 30px;
+  color: #333;
+}
+
+.success {
+  border-color: green;
+}
+```
