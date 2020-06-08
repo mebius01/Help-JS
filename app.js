@@ -42,23 +42,25 @@
 //     .catch(error => console.error(error))
 
 
-const user = {
-    name: 'John',
-    surname: 'Smith'
-};
+// const user = {
+//     name: 'John',
+//     surname: 'Smith'
+// };
 
-const parm = {
-    method: 'POST',
-    headers: {'Content-Type': 'application/json;charset=utf-8'},
-    body: JSON.stringify(user)
-}
+// const parm = {
+//     method: 'POST',
+//     headers: {
+//         'Content-Type': 'application/json;charset=utf-8'
+//     },
+//     body: JSON.stringify(user)
+// }
 
-fetch('https://reqres.in/api/users/', parm)
-.then(result => {
-    console.log(result.status);
-    return result.json();
-}).then(data => console.log(data))
-.catch(error => console.log(error))
+// fetch('https://reqres.in/api/users/', parm)
+//     .then(result => {
+//         console.log(result.status);
+//         return result.json();
+//     }).then(data => console.log(data))
+//     .catch(error => console.log(error))
 
 // El();
 
@@ -206,3 +208,48 @@ fetch('https://reqres.in/api/users/', parm)
 //     "Content-type": "application/json; charset=UTF-8"
 // }
 // http.post(url, cbResponse, headers, object)
+
+class Animal {
+    static type = "Animal"
+    constructor(options) {
+        this.name = options.name;
+        this.age = options.age;
+    }
+    voice() {
+        console.log(`I am Animal M name ${this.name}`);
+    }
+}
+
+
+const animal = new Animal({
+    name: "Iv",
+    age: 12
+});
+
+class Cat extends Animal {
+
+    static type = "Cat"
+
+    constructor(options) {
+        super(options);
+        this.color = options.color
+    }
+
+    voice() {
+        console.log(`I am Cat and M name ${this.name}!`);
+    }
+
+    get getAge() {
+        return this.age * 2
+    }
+
+    set setAge(a) {
+        this.age = a;
+    }
+}
+
+const cat = new Cat({
+    name: "cat",
+    age: 4,
+    color: "black"
+});
