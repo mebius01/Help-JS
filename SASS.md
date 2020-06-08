@@ -12,7 +12,7 @@
 
 ## Переменные
 
-SCSS
+main.scss
 
 ```scss
 $red: rgb(241, 122, 122);
@@ -22,7 +22,7 @@ a {
 }
 ```
 
-CSS
+main.css
 
 ```css
 a {
@@ -32,7 +32,7 @@ a {
 
 ## Вложенность
 
-SCSS
+main.scss
 
 ```scss
 .menu {
@@ -50,7 +50,7 @@ SCSS
 }
 ```
 
-CSS
+main.css
 
 ```css
 .menu {
@@ -70,7 +70,7 @@ CSS
 
 ## & Ссылка на родителя селектора
 
-SCSS
+main.scss
 
 ```scss
 a {
@@ -83,7 +83,7 @@ a {
 }
 ```
 
-CSS
+main.css
 
 ```css
 a {
@@ -98,7 +98,7 @@ a:hover {
 
 ## % @extend Шаблонные селекторы
 
-SCSS
+main.scss
 
 ```scss
 %for-h1 {
@@ -113,7 +113,7 @@ SCSS
 }
 ```
 
-CSS
+main.css
 
 ```css
 .h1 {
@@ -132,14 +132,11 @@ CSS
 
 foo.scss
 
-SCSS
-
 ```scss
 @import url("https://fonts.googleapis.com/css2?family=Piedra&display=swap");
 ```
 
 main.scss
-SCSS
 
 ```scss
 @import "foo";
@@ -148,7 +145,7 @@ SCSS
 }
 ```
 
-CSS
+main.css
 
 ```css
 .h1 {
@@ -158,7 +155,7 @@ CSS
 
 ## @mixin @include Миксины
 
-SCSS
+main.scss
 
 ```scss
 @mixin large-text {
@@ -178,7 +175,7 @@ SCSS
 }
 ```
 
-CSS
+main.css
 
 ```css
 .h2 {
